@@ -1,0 +1,146 @@
+Making install in include
+Making install in pqxx
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Nothing to be done for `install-exec-am'.
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include'
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx'
+ /usr/bin/install -c -m 644  pqxx/pqxx pqxx/array pqxx/array.hxx pqxx/binarystring pqxx/binarystring.hxx pqxx/compiler-public.hxx pqxx/composite pqxx/composite.hxx pqxx/connection pqxx/connection.hxx pqxx/cursor pqxx/cursor.hxx pqxx/dbtransaction pqxx/dbtransaction.hxx pqxx/errorhandler pqxx/errorhandler.hxx pqxx/except pqxx/except.hxx pqxx/field pqxx/field.hxx pqxx/isolation pqxx/isolation.hxx pqxx/largeobject pqxx/largeobject.hxx pqxx/nontransaction pqxx/nontransaction.hxx pqxx/notification pqxx/notification.hxx pqxx/pipeline pqxx/pipeline.hxx pqxx/prepared_statement pqxx/prepared_statement.hxx pqxx/result pqxx/result.hxx pqxx/result_iterator.hxx pqxx/robusttransaction pqxx/robusttransaction.hxx pqxx/separated_list pqxx/separated_list.hxx pqxx/strconv '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx'
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx/internal/gates'
+ /usr/bin/install -c -m 644  pqxx/internal/gates/connection-errorhandler.hxx pqxx/internal/gates/connection-largeobject.hxx pqxx/internal/gates/connection-notification_receiver.hxx pqxx/internal/gates/connection-pipeline.hxx pqxx/internal/gates/connection-sql_cursor.hxx pqxx/internal/gates/connection-transaction.hxx pqxx/internal/gates/errorhandler-connection.hxx pqxx/internal/gates/icursorstream-icursor_iterator.hxx pqxx/internal/gates/icursor_iterator-icursorstream.hxx pqxx/internal/gates/result-connection.hxx pqxx/internal/gates/result-creation.hxx pqxx/internal/gates/result-pipeline.hxx pqxx/internal/gates/result-sql_cursor.hxx pqxx/internal/gates/transaction-sql_cursor.hxx pqxx/internal/gates/transaction-transactionfocus.hxx '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx/internal/gates'
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx'
+ /usr/bin/install -c -m 644  pqxx/strconv.hxx pqxx/stream_from pqxx/stream_from.hxx pqxx/stream_to pqxx/stream_to.hxx pqxx/subtransaction pqxx/subtransaction.hxx pqxx/transaction pqxx/transaction.hxx pqxx/transaction_base pqxx/transaction_base.hxx pqxx/transactor pqxx/transactor.hxx pqxx/row pqxx/row.hxx pqxx/util pqxx/util.hxx pqxx/types pqxx/types.hxx pqxx/zview pqxx/zview.hxx pqxx/version pqxx/version.hxx '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx'
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx/internal'
+ /usr/bin/install -c -m 644  pqxx/internal/array-composite.hxx pqxx/internal/callgate.hxx pqxx/internal/compiler-internal-pre.hxx pqxx/internal/compiler-internal-post.hxx pqxx/internal/concat.hxx pqxx/internal/conversions.hxx pqxx/internal/encoding_group.hxx pqxx/internal/encodings.hxx pqxx/internal/ignore-deprecated-post.hxx pqxx/internal/ignore-deprecated-pre.hxx pqxx/internal/libpq-forward.hxx pqxx/internal/result_iter.hxx pqxx/internal/sql_cursor.hxx pqxx/internal/statement_parameters.hxx pqxx/internal/stream_iterator.hxx pqxx/internal/transaction_focus.hxx '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx/internal'
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include'
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx'
+ /usr/bin/install -c -m 644  pqxx/config-public-compiler.h '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include/pqxx'
+Making install in src
+depbase=`echo array.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT array.lo -MD -MP -MF $depbase.Tpo -c -o array.lo array.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT array.lo -MD -MP -MF .deps/array.Tpo -c array.cxx -o array.o
+depbase=`echo binarystring.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT binarystring.lo -MD -MP -MF $depbase.Tpo -c -o binarystring.lo binarystring.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT binarystring.lo -MD -MP -MF .deps/binarystring.Tpo -c binarystring.cxx -o binarystring.o
+depbase=`echo connection.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT connection.lo -MD -MP -MF $depbase.Tpo -c -o connection.lo connection.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT connection.lo -MD -MP -MF .deps/connection.Tpo -c connection.cxx -o connection.o
+depbase=`echo cursor.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT cursor.lo -MD -MP -MF $depbase.Tpo -c -o cursor.lo cursor.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT cursor.lo -MD -MP -MF .deps/cursor.Tpo -c cursor.cxx -o cursor.o
+depbase=`echo encodings.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT encodings.lo -MD -MP -MF $depbase.Tpo -c -o encodings.lo encodings.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT encodings.lo -MD -MP -MF .deps/encodings.Tpo -c encodings.cxx -o encodings.o
+depbase=`echo errorhandler.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT errorhandler.lo -MD -MP -MF $depbase.Tpo -c -o errorhandler.lo errorhandler.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT errorhandler.lo -MD -MP -MF .deps/errorhandler.Tpo -c errorhandler.cxx -o errorhandler.o
+depbase=`echo except.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT except.lo -MD -MP -MF $depbase.Tpo -c -o except.lo except.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT except.lo -MD -MP -MF .deps/except.Tpo -c except.cxx -o except.o
+depbase=`echo field.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT field.lo -MD -MP -MF $depbase.Tpo -c -o field.lo field.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT field.lo -MD -MP -MF .deps/field.Tpo -c field.cxx -o field.o
+depbase=`echo largeobject.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT largeobject.lo -MD -MP -MF $depbase.Tpo -c -o largeobject.lo largeobject.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT largeobject.lo -MD -MP -MF .deps/largeobject.Tpo -c largeobject.cxx -o largeobject.o
+depbase=`echo notification.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT notification.lo -MD -MP -MF $depbase.Tpo -c -o notification.lo notification.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT notification.lo -MD -MP -MF .deps/notification.Tpo -c notification.cxx -o notification.o
+depbase=`echo pipeline.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT pipeline.lo -MD -MP -MF $depbase.Tpo -c -o pipeline.lo pipeline.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT pipeline.lo -MD -MP -MF .deps/pipeline.Tpo -c pipeline.cxx -o pipeline.o
+depbase=`echo result.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT result.lo -MD -MP -MF $depbase.Tpo -c -o result.lo result.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT result.lo -MD -MP -MF .deps/result.Tpo -c result.cxx -o result.o
+depbase=`echo robusttransaction.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT robusttransaction.lo -MD -MP -MF $depbase.Tpo -c -o robusttransaction.lo robusttransaction.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT robusttransaction.lo -MD -MP -MF .deps/robusttransaction.Tpo -c robusttransaction.cxx -o robusttransaction.o
+depbase=`echo sql_cursor.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT sql_cursor.lo -MD -MP -MF $depbase.Tpo -c -o sql_cursor.lo sql_cursor.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT sql_cursor.lo -MD -MP -MF .deps/sql_cursor.Tpo -c sql_cursor.cxx -o sql_cursor.o
+depbase=`echo strconv.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT strconv.lo -MD -MP -MF $depbase.Tpo -c -o strconv.lo strconv.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT strconv.lo -MD -MP -MF .deps/strconv.Tpo -c strconv.cxx -o strconv.o
+depbase=`echo stream_from.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT stream_from.lo -MD -MP -MF $depbase.Tpo -c -o stream_from.lo stream_from.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT stream_from.lo -MD -MP -MF .deps/stream_from.Tpo -c stream_from.cxx -o stream_from.o
+depbase=`echo stream_to.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT stream_to.lo -MD -MP -MF $depbase.Tpo -c -o stream_to.lo stream_to.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT stream_to.lo -MD -MP -MF .deps/stream_to.Tpo -c stream_to.cxx -o stream_to.o
+depbase=`echo subtransaction.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT subtransaction.lo -MD -MP -MF $depbase.Tpo -c -o subtransaction.lo subtransaction.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT subtransaction.lo -MD -MP -MF .deps/subtransaction.Tpo -c subtransaction.cxx -o subtransaction.o
+depbase=`echo transaction.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT transaction.lo -MD -MP -MF $depbase.Tpo -c -o transaction.lo transaction.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT transaction.lo -MD -MP -MF .deps/transaction.Tpo -c transaction.cxx -o transaction.o
+depbase=`echo transaction_base.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT transaction_base.lo -MD -MP -MF $depbase.Tpo -c -o transaction_base.lo transaction_base.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT transaction_base.lo -MD -MP -MF .deps/transaction_base.Tpo -c transaction_base.cxx -o transaction_base.o
+depbase=`echo row.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT row.lo -MD -MP -MF $depbase.Tpo -c -o row.lo row.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT row.lo -MD -MP -MF .deps/row.Tpo -c row.cxx -o row.o
+depbase=`echo util.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT util.lo -MD -MP -MF $depbase.Tpo -c -o util.lo util.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT util.lo -MD -MP -MF .deps/util.Tpo -c util.cxx -o util.o
+depbase=`echo version.lo | sed 's|[^/]*$|.deps/&|;s|\.lo$||'`;\
+	/bin/sh ../libtool  --tag=CXX   --mode=compile /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT version.lo -MD -MP -MF $depbase.Tpo -c -o version.lo version.cxx &&\
+	mv -f $depbase.Tpo $depbase.Plo
+libtool: compile:  /usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT version.lo -MD -MP -MF .deps/version.Tpo -c version.cxx -o version.o
+/bin/sh ../libtool  --tag=CXX   --mode=link /usr/bin/clang++ -std=c++17  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -release 7.3 -rpath /Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib  -L/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib -o libpqxx.la -rpath /Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib array.lo binarystring.lo connection.lo cursor.lo encodings.lo errorhandler.lo except.lo field.lo largeobject.lo notification.lo pipeline.lo result.lo robusttransaction.lo sql_cursor.lo strconv.lo stream_from.lo stream_to.lo subtransaction.lo transaction.lo transaction_base.lo row.lo util.lo version.lo  -lpq 
+libtool: link: ar cr .libs/libpqxx.a  array.o binarystring.o connection.o cursor.o encodings.o errorhandler.o except.o field.o largeobject.o notification.o pipeline.o result.o robusttransaction.o sql_cursor.o strconv.o stream_from.o stream_to.o subtransaction.o transaction.o transaction_base.o row.o util.o version.o
+libtool: link: ranlib .libs/libpqxx.a
+libtool: link: ( cd ".libs" && rm -f "libpqxx.la" && ln -s "../libpqxx.la" "libpqxx.la" )
+ ../config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib'
+ /bin/sh ../libtool   --mode=install /usr/bin/install -c   libpqxx.la '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib'
+libtool: install: /usr/bin/install -c .libs/libpqxx.lai /Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib/libpqxx.la
+libtool: install: /usr/bin/install -c .libs/libpqxx.a /Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib/libpqxx.a
+libtool: install: chmod 644 /Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib/libpqxx.a
+libtool: install: ranlib /Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib/libpqxx.a
+make[2]: Nothing to be done for `install-data-am'.
+Making install in test
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in tools
+depbase=`echo rmlo.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT rmlo.o -MD -MP -MF $depbase.Tpo -c -o rmlo.o rmlo.cxx &&\
+	mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link /usr/bin/clang++ -std=c++17  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden  -L/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib -o rmlo rmlo.o ../src/libpqxx.la  -lpq 
+libtool: link: /usr/bin/clang++ -std=c++17 -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -o rmlo rmlo.o -Wl,-bind_at_load  -L/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib ../src/.libs/libpqxx.a -lpq
+depbase=`echo pqxxthreadsafety.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+	/usr/bin/clang++ -std=c++17 -DHAVE_CONFIG_H   -I../include -I../include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include -I/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/include  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -MT pqxxthreadsafety.o -MD -MP -MF $depbase.Tpo -c -o pqxxthreadsafety.o pqxxthreadsafety.cxx &&\
+	mv -f $depbase.Tpo $depbase.Po
+/bin/sh ../libtool  --tag=CXX   --mode=link /usr/bin/clang++ -std=c++17  -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden  -L/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib -o pqxxthreadsafety pqxxthreadsafety.o ../src/libpqxx.la  -lpq 
+libtool: link: /usr/bin/clang++ -std=c++17 -g -O2 -fvisibility=hidden -fvisibility-inlines-hidden -o pqxxthreadsafety pqxxthreadsafety.o -Wl,-bind_at_load  -L/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib ../src/.libs/libpqxx.a -lpq
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in config
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+Making install in doc
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
+make[2]: Nothing to be done for `install-exec-am'.
+ config/install-sh -c -d '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib/pkgconfig'
+ /usr/bin/install -c -m 644 libpqxx.pc '/Users/baldvin/projects/libpqxx_visibility_issue_repro/build/lib/pkgconfig'

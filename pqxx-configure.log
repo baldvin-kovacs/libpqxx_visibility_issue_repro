@@ -1,12 +1,11 @@
-checking for g++... g++
 checking whether the C++ compiler works... yes
 checking for C++ compiler default output file name... a.out
 checking for suffix of executables... 
 checking whether we are cross compiling... no
 checking for suffix of object files... o
 checking whether we are using the GNU C++ compiler... yes
-checking whether g++ accepts -g... yes
-checking whether g++ supports C++17 features with -std=c++17... yes
+checking whether /usr/bin/clang++ accepts -g... yes
+checking whether /usr/bin/clang++ supports C++17 features with -std=c++17... yes
 checking for a BSD-compatible install... /usr/bin/install -c
 checking whether build environment is sane... yes
 checking for a thread-safe mkdir -p... config/install-sh -c -d
@@ -17,9 +16,9 @@ checking for awk... awk
 checking whether make sets $(MAKE)... yes
 checking whether make supports the include directive... yes (GNU style)
 checking whether make supports nested variables... yes
-checking dependency style of g++ -std=c++17... gcc3
+checking dependency style of /usr/bin/clang++ -std=c++17... gcc3
 checking whether we are using the GNU C++ compiler... (cached) yes
-checking whether g++ -std=c++17 accepts -g... (cached) yes
+checking whether /usr/bin/clang++ -std=c++17 accepts -g... (cached) yes
 checking build system type... x86_64-apple-darwin19.6.0
 checking host system type... x86_64-apple-darwin19.6.0
 checking how to print strings... printf
@@ -90,16 +89,16 @@ checking whether stripping libraries is possible... yes
 checking if libtool supports shared libraries... yes
 checking whether to build shared libraries... no
 checking whether to build static libraries... yes
-checking how to run the C++ preprocessor... g++ -std=c++17 -E
-checking for ld used by g++ -std=c++17... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
+checking how to run the C++ preprocessor... /usr/bin/clang++ -std=c++17 -E
+checking for ld used by /usr/bin/clang++ -std=c++17... /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld
 checking if the linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) is GNU ld... no
-checking whether the g++ -std=c++17 linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
-checking for g++ -std=c++17 option to produce PIC... -fno-common -DPIC
-checking if g++ -std=c++17 PIC flag -fno-common -DPIC works... yes
-checking if g++ -std=c++17 static flag -static works... no
-checking if g++ -std=c++17 supports -c -o file.o... yes
-checking if g++ -std=c++17 supports -c -o file.o... (cached) yes
-checking whether the g++ -std=c++17 linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking whether the /usr/bin/clang++ -std=c++17 linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
+checking for /usr/bin/clang++ -std=c++17 option to produce PIC... -fno-common -DPIC
+checking if /usr/bin/clang++ -std=c++17 PIC flag -fno-common -DPIC works... yes
+checking if /usr/bin/clang++ -std=c++17 static flag -static works... no
+checking if /usr/bin/clang++ -std=c++17 supports -c -o file.o... yes
+checking if /usr/bin/clang++ -std=c++17 supports -c -o file.o... (cached) yes
+checking whether the /usr/bin/clang++ -std=c++17 linker (/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld) supports shared libraries... yes
 checking dynamic linker characteristics... darwin19.6.0 dyld
 checking how to hardcode library paths into programs... immediate
 checking whether make sets $(MAKE)... (cached) yes
