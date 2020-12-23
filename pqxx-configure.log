@@ -149,11 +149,11 @@ config.status: executing depfiles commands
 config.status: executing libtool commands
 config.status: executing configitems commands
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-internal-autotools.h': 7 item(s).
-Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-internal-compiler.h': 4 item(s).
+Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-internal-compiler.h': 3 item(s).
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-internal-libpq.h': 1 item(s).
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-private-autotools.h': 0 item(s).
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-private-compiler.h': 1 item(s).
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-private-libpq.h': 0 item(s).
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-public-autotools.h': 0 item(s).
-Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-public-compiler.h': 3 item(s).
+Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-public-compiler.h': 4 item(s).
 Generating b'/Users/baldvin/projects/libpqxx_visibility_issue_repro/libpqxx/include/pqxx/config-public-libpq.h': 0 item(s).

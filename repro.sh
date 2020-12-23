@@ -18,7 +18,7 @@ cd ..
 git clone https://github.com/jtv/libpqxx.git
 
 cd libpqxx
-git checkout b25851630ee28cab0f395cab6dde1397c1749e96
+#git checkout b25851630ee28cab0f395cab6dde1397c1749e96
 CXX=/usr/bin/clang++ ./configure --with-postgres-include="$BUILD/include" --with-postgres-lib="$BUILD/lib" \
     --prefix="$BUILD" 2>&1 | tee ../pqxx-configure.log
 make install 2>&1 | tee ../pqxx-compile.log
